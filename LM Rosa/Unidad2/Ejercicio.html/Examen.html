@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Introducción CSS</title>
+		<link rel="stylesheet" href="02Selectores.css" type="text/css"/>
+	</head>
+	<body>
+		<!-- EJERCICIO 1 -->
+		<h1>RESTAURANTE NavalXO</h1>
+		<table>
+			<tr>
+			<td>
+				<img src="img/principal.jpg"/>
+			</td>
+			<td>
+				<p>¡Bien....<u><b>NavalXO</b></u>! En....</p>
+				<p>Con...</p>
+				<p><i>Descubre...</i></p>
+			</td>
+			</tr>
+		</table>
+		
+		<!-- EJERCICIO 2 -->
+		<h1>Menú del día</h1>
+		<ul type="square">
+			<li>Primeros
+				<ol type="A">
+					<li>Sopa</li>
+					<li>Ensalada</li>
+				</ol>
+			</li>
+			<li>Segundos
+				<ol type="A">
+					<li>Solomillo</li>
+					<li>Ternera</li>
+				</ol>
+			</li>
+			<li>Postres
+				<ol type="A">
+					<li>Tarta</li>
+					<li>Fruta</li>
+				</ol>
+			</li>
+		</ul>
+		<!-- EJERCICIO 3 -->
+		<h1>RESERVAS</h1>
+		<form action="" method="post">
+			<label for="nombre">Nombre y Apellidos * </label><br/>
+			<input type="text" id="nombre" 
+			placeholder="Nombre y apellidos"
+			maxlength="40"
+			required="required"/><br/>
+			
+			<label for="telefono">Teléfono * </label><br/>
+			<input type="tel" id="telefono" 
+			placeholder="(+34) 611111111"
+			pattern = "(+[0-9]{2})[0-9]{9}"
+			required="required"/><br/>
+			
+			<label for="email">Email</label><br/>
+			<input type="email" id="email" 
+			placeholder="correo@dominio.com"/><br/>
+			
+			<label for="fecha">Fecha/Hora Reserva * </label><br/>
+			<input type="date" id="fecha" required="required"/>
+			<input type="time" id="hora" required="required"/>
+			<br/>
+			<label for="nC">Nº de comensales * </label><br/>
+			<input type="number" id="nC" 
+			value="1"
+			required="required"/><br/>
+			
+			<label>Alergias</label><br/>
+			<input type="checkbox" id="gluten" name="gluten" value="gluten"/>
+			<label for="gluten">Gluten</label>
+			<input type="checkbox" id="lactosa" name="lactosa" value="lactosa"/>
+			<label for="lactosa">Lactosa</label>
+			<input type="checkbox" id="otros" name="otros" value="otros"/>
+			<label for="otros">Otros</label>
+			<br>
+			<!-- otra forma -->
+			<input type="checkbox" id="gluten" name="alergias[]" value="gluten"/>
+			<label for="gluten">Gluten</label>
+			<input type="checkbox" id="lactosa" name="alergias[]" value="lactosa"/>
+			<label for="lactosa">Lactosa</label>
+			<input type="checkbox" id="otros" name="alergias[]" value="otros"/>
+			<label for="otros">Otros</label><br/>
+			
+			<label>Preferencia de zona</label><br/>
+			<input type="radio" id="terraza" name="zona" value="1"/>
+			<label for="terraza">Terraza</label>
+			<input type="radio" id="gredos" name="zona" value="2" checked="checked"/>
+			<label for="gredos">Salón Gredos</label>
+			<input type="radio" id="vera" name="zona" value="3"/>
+			<label for="vera">Salón la Vera</label><br/>
+			
+			<label for="promo">Código de promoción</label>
+			<select id ="promo">
+				<option>Sin promo</option>
+				<option>Amigos XO</option>
+				<option>SmartBox</option>
+				<option>aladina</option>
+			</select><br/>
+			
+			<label for="comentario">Comentario</label>
+			<textarea id = "comentario" cols="10" rows="5" placeholder="Puedes...">
+			</textarea>
+			
+			<button type="submit">Enviar</button>
+			<input type="reset" value="Borrar"/>
+			
+		</form>
+		
+		<!-- Ejercicio 4 -->
+		<h1>Bodega</h1>
+		<table border="1" rules="groups">
+			<caption><i>Los precios.....</i></caption>
+			<thead>
+				<tr>
+					<th colspan="2">Nuestr...</th>
+				</tr>
+				<tr>
+					<th>Marca</th>
+					<th>Precio</th>
+				</tr>
+			</thead>
+				
+			<tbody>
+				<tr>
+					<td>Loriñón</td>
+					<td>18€</td>
+				</tr>
+				<tr>
+					<td>Coto...</td>
+					<td>15€</td>
+				</tr>
+				<tr>
+					<td>Tierra..</td>
+					<td>20€</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<th colspan="2">** Prohi....</th>
+				</tr>
+			</tfoot>
+		</table>
+		
+		<!-- Ejercicio 5 -->
+		<h1>Índice</h1>
+		<ul>
+			<li><a href="#rest">REstau....</a></li>
+			<li><a href="#menu">Menú....</a></li>
+			<li><a href="#reser">Reservas....</a></li>
+			<li><a href="#bodega">Bodega....</a></li>
+			
+			<a id="rest"/>
+			<a id="menu"/>
+			<a id="reser"/>
+			<a id="bodega"/>
+		</ul>
+		<!-- Ejercicio 6 -->
+		<header>
+			<h1>RES...</h1>
+			<nav>
+				<a href="">El..</a>
+				<a href="">Carta</a>
+				<a href="">Reservas</a>
+				<a href="">bodega</a>
+			</nav>
+		</header>
+		<aside>
+			<ul>
+				<li><a href="">La funda..</a></li>
+				<li><a href="">Prensa...</a></li>
+					...				
+			</ul>
+		</aside>			
+		<aside>
+			<ul>
+				<li>
+					<figure>
+						<figcaption>REgala..</figcaption>
+						<img src=""/>
+					</figure>
+				</li>
+				<li>
+					<figure>
+						<figcaption>El entorno..</figcaption>
+						<img src=""/>
+					</figure>
+				</li>
+							
+			</ul>
+		</aside>
+		<section>
+			<header>
+				<h1>El....</h1>
+			</header>
+			<article>
+				<h1>Salones...</h1>
+				<figure>		
+					<img src=""/>
+					<figcaption>Salón....</figcaption>
+				</figure>
+				<p>¿Por qué....</p>
+			</article>
+			<article>
+				<h1>Nuestra...</h1>
+				<figure>		
+					<img src=""/>
+					<figcaption>Producto....</figcaption>
+				</figure>
+				<p>Es mucho....</p>
+			</article>
+			<article>
+				<h1>Salones...</h1>
+				<figure>		
+					<img src=""/>
+					<figcaption>Salón....</figcaption>
+				</figure>
+				<p>¿Por qué....</p>
+			</article>
+			<article>
+				<h1>La cocina...</h1>
+				<figure>		
+					<img src=""/>
+					<figcaption>Cocina....</figcaption>
+				</figure>
+				<p>Regentada...</p>
+			</article>
+		</section>
+		<footer>
+			<p>Naval...</p>
+			<p>geren...</p>
+			<p><a href="">ht...</a></p>	
+		</footer>
+		
+	</body>
+</html>
+
+
+
+
+
+/*SELECTORES*/
+/*
+Hacer que todos los elementos de la pagina se muestren con el tipo de letra Calibri
+/*
+*{
+	font-family:Arial;
+}
+
+/*
+Todos los títulos de h1 deben aparecer centrados 
+h1{
+

@@ -1,0 +1,13 @@
+/*SELECTORES*/
+/*
+Hacer que todos los elementos de la pagina se muestren con el tipo de letra Calibri
+/*
+*{
+	font-family:Calibri;
+}
+
+/*
+Todos los títulos de h1 deben aparecer centrados 
+h1{
+	text-align:center;
+}

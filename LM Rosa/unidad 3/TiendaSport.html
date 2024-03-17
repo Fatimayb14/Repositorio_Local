@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="tienda.css" />
+    <title>Tienda de Artículos Deportivos</title>
+    
+</head>
+<body>
+    <header>
+		<div id="logo">
+			<img class="logo" src="logo.png"/>
+		</div>
+		<div id="titulo">
+			<h1>DeSport</h1>
+			<nav>
+				<ul>
+					<li><a href="#">Inicio</a></li>
+					<li><a href="#">Ropa deportiva</a></li>
+					<li><a href="#">Calzado deportivo</a></li>
+					<li><a href="#">Accesorios</a></li>
+					<li><a href="#">Ofertas</a></li>
+					<li><a href="#">Contacto</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div id="busqueda">
+			<form action="#" method="post">
+				<input type="text" placeholder="referencia o nombre"/>
+				<img src="lupa.png" onclick="submit()"/>
+			</form>
+		</div>
+    </header>
+    
+	<aside id="cat">
+		<!-- Contenido de la barra lateral izquierda -->
+		<h3>Categorías</h3>
+		<ul>
+			<li>Fútbol</li>
+			<li>Baloncesto</li>
+			<li>Tenis</li>
+			<li>Running</li>
+			<li>Golf</li>
+			<li>Ciclismo</li>
+			<li>Otros</li>
+		</ul>
+	</aside>
+	<section id="art">
+		<article>
+			<h3>Referencia: ART001</h3>
+			<img src="camiseta.png"/>
+			<p>Camiseta de entrenamiento transpirable</p>
+			<p>Precio: 20,99€</p>
+		</article>
+		<article>
+			<h3>Referencia: ART002</h3>
+			<img src="zapatillas.png"/>
+			<p>Zapatillas de running con tecnología de amortiguación</p>
+			<p>Precio: 79,99€</p>
+		</article>
+		<article>
+			<h3>Referencia: ART003</h3>
+			<img src="balon.png"/>
+			<p>Balón Fútbol Moralo Temporada 23/24</p>
+			<p>Precio: 31,99€</p>
+		</article>
+		<article>
+			<h3>Referencia: ART004</h3>
+			<img src="bolsa.png"/>
+			<p>Bolsa deportiva vintage</p>
+			<p>Precio: 20,99€</p>
+		</article>
+		<article>
+			<h3>Referencia: ART005</h3>
+			<img src="gorra.png"/>
+			<p>Gorra Blanca y Verde Prime</p>
+			<p>Precio: 25,99€</p>
+		</article>
+	</section>
+  
+	<aside  id="promo">
+		<!-- Contenido de la barra lateral derecha -->
+		<h3>Ofertas Especiales</h3>
+		<ul>
+			<li>20% de descuento en todas las chaquetas</li>
+			<li>Compra dos pares de calcetines y llévate el tercero gratis</li>
+			<li>Descubre nuestras promociones en accesorios de fitness</li>
+		</ul>
+	</aside>
+  
+    <footer>
+        <p>&copy; 2023 Tienda de Artículos Deportivos. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
